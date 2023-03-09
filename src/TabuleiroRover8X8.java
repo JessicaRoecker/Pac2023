@@ -16,12 +16,17 @@ public class TabuleiroRover8X8 {
         System.out.println("O robo Rover esta na posicao 11 da tabela. Ele so precisa andar duas casas para chegar na posicao 13 da tabela. De somente o comando que ele precise");
 
         while (jogada != 5) {
-            System.out.println("Escolha o movimento: direita (4), esquerda (3), baixo (2), cima (1), sair(5)");
-            jogada = scanner.nextInt();
-            if (jogada >= 1 && jogada <= 4) {
-                movimentos.add(jogada);
-            } else if (jogada < 1 || jogada < 5) {
-                System.out.println("Jogada invalida!!! Tente novamnete");
+            System.out.println("Escolha os movimentos: direita (4), esquerda (3), baixo (2), cima (1), sair (5)");
+            if (scanner.hasNextInt()) { // Verifica se o próximo token é um inteiro
+                jogada = scanner.nextInt();
+                if (jogada >= 1 && jogada <= 4) {
+                    movimentos.add(jogada);
+                } else if (jogada < 1 || jogada > 5) {
+                    System.out.println("Jogada inválida!!! Tente novamente");
+                }
+            } else {
+                String entrada = scanner.next(); // Lê a entrada como uma string para descartá-la
+                System.out.println("Digite um número válido!");
             }
         }
 
@@ -49,7 +54,7 @@ public class TabuleiroRover8X8 {
         if (posicao == acerto) {
             System.out.println("Parabens voce acertou, o Rover chegou na posicao " + posicao);
         } else {
-            System.out.println("Voce errou a posicao " + posicao + " esta errada ele precisa chegar na posição 13 do tabuleiro.");
+            System.out.println("Voce errou a posicao " + posicao + " esta errada ele precisa chegar na posicao 13 do tabuleiro.");
         }
     }
 
