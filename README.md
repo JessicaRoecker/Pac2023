@@ -4,7 +4,7 @@
 
 <h3>Conforme o decorrer do semestre irei trabalhar em exercicios proposto pelo professor DIOGO VINÍCIUS WINCK da Universidade Católica de Joinville, Santa Catarina
 </h3>
-<h5>Estou programando todos os exercicios na linguagem java e usando o IntelliJ IDEA Community Edition 2022.1 para desenvolver os códigos dos exercícios prpostos para esse semestre</h5>
+<h5>Estou programando todos os exercicios na linguagem java e usando o IntelliJ IDEA Community Edition 2022.1 para desenvolver os códigos dos exercícios propostos para esse semestre</h5>
 
 - Primeiro exercício:(src/TrilhoRover.java)
 > Um Rover em marte está sobre o trilho. Ele é direcionado para se mover em algo que podemos assumir com um trilho onde cada posição é um numero sequencial.<br>
