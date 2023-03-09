@@ -10,15 +10,7 @@ import java.util.Scanner;
             int jogada = 0;
             int posicao = 0;
 
-            while (jogada != 5) {
-                System.out.print("Digite um comando: cima (1), baixo(2), esquerda(3), direita(4) ou sair(5): ");
-                jogada = scanner.nextInt();
-                if (jogada >= 1 && jogada <= 4) {
-                    movimentos.add(jogada);
-                } else if (jogada < 1 || jogada > 5) {
-                    System.out.println("Opção inválida, tente novamente!");
-                }
-            }
+
 
             for (int movimento : movimentos) {
                 if (movimento == DirecaoEnum.CIMA.getValor()) {
