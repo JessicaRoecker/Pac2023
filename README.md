@@ -32,6 +32,13 @@ Sair da posição [2] [2]<br>
 Chegar na posição [2] [4]<br>
 Exibir o trajeto ultilizado<br>
 
+- Quarto Exercício: (src/TabuleiroDesafio2.java)
+> Ele deve:<br>
+Sair da posição [2] [2]<br>
+Chegar na posição [4] [4]<br>
+Exibir o trajeto ultilizado<br>
+
+
 
 
 
