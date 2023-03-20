@@ -13,7 +13,7 @@ public class TabuleiroObstaculo {
         int acerto = 7;
 
         System.out.println("Vamos joga?\n O jogo está ficando mais empolgante!!!");
-        System.out.println("Temos um obstaculo!!! Esta na casa 3 e você não pode passar por ali\n, precisa fazer o robo rover da a volta para chegar ate a casa 7");
+        System.out.println("Temos um obstaculo!!! Esta na casa 2 e você não pode passar por ali\n, precisa fazer o robo rover da a volta para chegar ate a casa 7");
         System.out.println("Lembrando que nosso tabuleiro se inicia na casa 0");
 
         while (jogada != 5) {
@@ -48,7 +48,7 @@ public class TabuleiroObstaculo {
                 System.out.println("Sua posicao é " + posicao);
             }
             if (posicao == obstaculo) {
-                System.out.println("Você precisa desviar da casa 3!!!!");
+                System.out.println("Você precisa desviar da casa 2!!!!");
                 System.out.println("Tente Novamente!!!");
                 break;
 
