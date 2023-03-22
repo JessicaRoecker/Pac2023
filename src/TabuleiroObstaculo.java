@@ -5,11 +5,12 @@ import java.util.List;
 public class TabuleiroObstaculo {
     public static void main(String[] args) {
         List<Integer> movimentos = new ArrayList<>();
+        List<Integer> obstaculo = new ArrayList<>();
+        obstaculo.add(2);
         Scanner scanner = new Scanner(System.in);
 
         int jogada = 0;
         int posicao = 0;
-        int obstaculo = 3;
         int acerto = 7;
 
         System.out.println("Vamos joga?\n O jogo está ficando mais empolgante!!!");
@@ -47,24 +48,21 @@ public class TabuleiroObstaculo {
             } else if (movimento == DirecaoEnum.SAIR.getValor()) {
                 System.out.println("Sua posicao é " + posicao);
             }
-            if (posicao == obstaculo) {
-                System.out.println("Você precisa desviar da casa 2!!!!");
-                System.out.println("Tente Novamente!!!");
-                break;
-
+                for (int obstaculos : obstaculo) {
+                    if (posicao == obstaculos  ) {
+                        System.out.println("Você precisa desviar da casa 2!!!!");
+                        System.out.println("Tente Novamente!!!");
+                        break;
+                    }
+                }
             }
 
-        }
-        if (posicao != obstaculo) {
-            if (posicao == acerto) {
-                System.out.println("Parabens!!! O rover chegou na posiça " + posicao);
 
-            } else {
-                System.out.println("Voce errou a posicao " + posicao + " esta errada ele precisa chegar na posicao 7 do tabuleiro.");
-            }
         }
 
-    }
+
+
+
 
 
     public static int mover(int posicao, int movimento) {

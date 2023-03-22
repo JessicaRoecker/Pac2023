@@ -39,6 +39,7 @@ public class TabuleiroObstaculo2 {
             if (movimento == DirecaoEnum.BAIXO.getValor()) {
                 posicao = mover(posicao, +8);
                 System.out.println("Movendo para Baixo, sua posição é " + posicao);
+
             } else if (movimento == DirecaoEnum.CIMA.getValor()) {
                 posicao = mover(posicao, -8);
                 System.out.println("Movendo para Cima, sua posição é " + posicao);
@@ -51,22 +52,38 @@ public class TabuleiroObstaculo2 {
             } else if (movimento == DirecaoEnum.SAIR.getValor()) {
                 System.out.println("Sua posicao é " + posicao);
             }
-
-
-            for (int i = 0; i < obstaculo1.size(); i++) {
-                if (obstaculo1.get(i) == posicao ) {
-                    System.out.println("ALERTA!!!! CAIU EM UM OBSTACULO");
-                    System.out.println("Voce precisa desviar da casa " + posicao + " !!!");
-                    System.out.println("As casas 2, 16, 36 e 37 precisam ser desviadas");
-
-
+                for (int obstaculo : obstaculo1) {
+                    if (obstaculo == posicao) {
+                        System.out.println("ALERTA!!!! CAIU EM UM OBSTACULO");
+                        System.out.println("Voce precisa desviar da casa " + posicao + " !!!");
+                        System.out.println("As casas 2, 16, 36 e 37 precisam ser desviadas");
+                        break;
+                    }
                 }
 
+            }
 
+
+            if (posicao == acerto) {
+                System.out.println("Parabens voce acertou ");
             }
         }
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public static int mover(int posicao, int movimento) {
         posicao += movimento;
