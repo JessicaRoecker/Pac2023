@@ -32,7 +32,12 @@ public class TabuleiroObstaculo {
             }
         }
 
+        boolean atingiuObstaculo = false;
         for (int movimento : movimentos) {
+            if (atingiuObstaculo) {
+                System.out.println("Você atingiu um obstáculo e não pode mais se mover.");
+                break;
+            }
             if (movimento == DirecaoEnum.BAIXO.getValor()) {
                 posicao = mover(posicao, +8);
                 System.out.println("Movendo para Baixo, sua posição é " + posicao);
@@ -45,11 +50,12 @@ public class TabuleiroObstaculo {
             } else if (movimento == DirecaoEnum.ESQUERDA.getValor()) {
                 posicao = mover(posicao, -1);
                 System.out.println("Movendo para Esquerda, sua posição é " + posicao);
-            } else if (movimento == DirecaoEnum.SAIR.getValor()) {
-                System.out.println("Sua posicao é " + posicao);
+            } else if (movimento == DirecaoEnum.SAIR.getValor() ) {
+                break;
             }
                 for (int obstaculos : obstaculo) {
                     if (posicao == obstaculos  ) {
+                        atingiuObstaculo = true;
                         System.out.println("Você precisa desviar da casa 2!!!!");
                         System.out.println("Tente Novamente!!!");
                         break;
