@@ -35,7 +35,12 @@ public class TabuleiroObstaculo2 {
             }
         }
 
-        for (int movimento : movimentos) {
+        boolean atingiuObstaculo = false;
+        for (int movimento : movimentos){
+            if (atingiuObstaculo){
+                System.out.println("Você atingiu um obstáculo e não pode mais se mover.");
+                break;
+            }
             if (movimento == DirecaoEnum.BAIXO.getValor()) {
                 posicao = mover(posicao, +8);
                 System.out.println("Movendo para Baixo, sua posição é " + posicao);
@@ -54,6 +59,7 @@ public class TabuleiroObstaculo2 {
             }
                 for (int obstaculo : obstaculo1) {
                     if (obstaculo == posicao) {
+                        atingiuObstaculo = true;
                         System.out.println("ALERTA!!!! CAIU EM UM OBSTACULO");
                         System.out.println("Voce precisa desviar da casa " + posicao + " !!!");
                         System.out.println("As casas 2, 16, 36 e 37 precisam ser desviadas");
@@ -64,9 +70,12 @@ public class TabuleiroObstaculo2 {
             }
 
 
-            if (posicao == acerto) {
-                System.out.println("Parabens voce acertou ");
-            }
+        if (posicao == acerto) {
+            System.out.println("Parabens o rover chegou na casa 7!!!");
+        } else if (posicao != acerto && !atingiuObstaculo) {
+            System.out.println("A casa "+posicao+" esta errada. Voce precisa  chegar na casa 7!!!");
+
+        }
         }
 
 
