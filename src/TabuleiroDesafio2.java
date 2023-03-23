@@ -17,6 +17,7 @@ public class TabuleiroDesafio2 {
                 "       8 9 10 *11* 12 13 14 15 .... \n Lembre-se que o Rover esta saindo da posicao *11* ");
         System.out.println("E assim por diante, ate chegar no 64");
 
+
         while (jogada != 5) {
             System.out.println("Escolha os movimentos: direita (4), esquerda (3), baixo (2), cima (1), sair (5)");
             if (scanner.hasNextInt()) { // Verifica se o próximo token é um inteiro
