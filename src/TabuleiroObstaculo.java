@@ -50,21 +50,28 @@ public class TabuleiroObstaculo {
             } else if (movimento == DirecaoEnum.ESQUERDA.getValor()) {
                 posicao = mover(posicao, -1);
                 System.out.println("Movendo para Esquerda, sua posição é " + posicao);
-            } else if (movimento == DirecaoEnum.SAIR.getValor() ) {
+            } else if (movimento == DirecaoEnum.SAIR.getValor()) {
                 break;
             }
-                for (int obstaculos : obstaculo) {
-                    if (posicao == obstaculos  ) {
-                        atingiuObstaculo = true;
-                        System.out.println("Você precisa desviar da casa 2!!!!");
-                        System.out.println("Tente Novamente!!!");
-                        break;
-                    }
+            for (int obstaculos : obstaculo) {
+                if (posicao == obstaculos) {
+                    atingiuObstaculo = true;
+                    System.out.println("Você precisa desviar da casa 2!!!!");
+                    System.out.println("Tente Novamente!!!");
+                    break;
                 }
+
             }
 
+        }
+        if (posicao == acerto) {
+            System.out.println("Parabens o rover chegou na casa 7!!!");
+        } else if (posicao != acerto && !atingiuObstaculo) {
+            System.out.println("A casa "+posicao+" esta errada. Voce precisa  chegar na casa 7!!!");
 
         }
+
+    }
 
 
 
