@@ -14,10 +14,10 @@ public class TabuleiroObstaculo2 {
 
         int jogada = 0;
         int posicao = 0;
-        int acerto = 7;
+        int acerto = 63;
 
         System.out.println("Vamos joga?\n O jogo está ficando mais empolgante!!!");
-        System.out.println("Temos 4 obstaculo!!! Esta na casa 2, 16, 36 e 37.E você não pode passar por ali\n, precisa fazer o robo rover da a volta para chegar ate a casa 7");
+        System.out.println("Temos 4 obstaculo!!! Esta na casa 2, 16, 36 e 37.E você não pode passar por ali\n, precisa fazer o robo rover da a volta para chegar ate a casa 63");
         System.out.println("Lembrando que nosso tabuleiro se inicia na casa 0");
 
         while (jogada != 5) {
@@ -71,7 +71,7 @@ public class TabuleiroObstaculo2 {
 
 
         if (posicao == acerto) {
-            System.out.println("Parabens o rover chegou na casa 7!!!");
+            System.out.println("Parabens o rover chegou na casa 63!!!");
         } else if (posicao != acerto && !atingiuObstaculo) {
             System.out.println("A casa "+posicao+" esta errada. Voce precisa  chegar na casa 7!!!");
 
@@ -98,8 +98,8 @@ public class TabuleiroObstaculo2 {
         posicao += movimento;
         if (posicao < 0) {
             posicao = 0;
-        } else if (posicao > 64) {
-            posicao = 64;
+        } else if (posicao > 71) {
+            posicao = 71;
         }
         return posicao;
     }
