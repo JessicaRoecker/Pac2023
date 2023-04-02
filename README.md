@@ -38,6 +38,21 @@ Sair da posição [2] [2]<br>
 Chegar na posição [4] [4]<br>
 Exibir o trajeto ultilizado<br>
 
+- Quinto Exercicio(src/TabuleiroObstaculo.java)
+> Ele deve: <br>
+Sair da posição [0] [0]<br>
+Chegar na posição [0] [7]<br>
+A matriz é iniciada com bloqueios, na posição [0] [2]<br>
+Mostrar o Trajeto ultilizado<br>
+
+- Sexto desafio (src/ TabuleiroObstaculo2)
+> Ele deve:<br>
+ Ele deve: <br>
+Sair da posição [0] [0]<br>
+Chegar na posição [7] [7]<br>
+A matriz é iniciada com bloqueios, na posição [0][2], [2][0], [4][4], [4][5]<br>
+Mostrar o Trajeto ultilizado<br>
+
 
 
 
