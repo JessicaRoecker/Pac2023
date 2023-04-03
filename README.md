@@ -1,6 +1,11 @@
 # Pac2023
 <h1>Projeto PAC Segundo Semestre</h1>
 <br>
+<h3>Grupo que desenvolver Exercícios:</h3>
+> Jessica <br>
+Ricardo<br>
+Guilherme<br>
+Ruan<br>
 
 <h3>Conforme o decorrer do semestre irei trabalhar em exercicios proposto pelo professor DIOGO VINÍCIUS WINCK da Universidade Católica de Joinville, Santa Catarina
 </h3>
