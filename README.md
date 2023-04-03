@@ -2,6 +2,7 @@
 <h1>Projeto PAC Segundo Semestre</h1>
 <br>
 <h3>Grupo que desenvolver Exercícios:</h3>
+
 > Jessica <br>
 Ricardo<br>
 Guilherme<br>
